@@ -35,7 +35,7 @@
       </div>
       <h1 class="callback-title">Написать нам</h1>
       <div class="callback-form">
-        <form action="">
+        <form novalidate="novalidate" enctype="multipart/form-data" class="service-modal-footer__form">
           <div class="callback__info">
             <div class="callback__input-wrap callback__input-short">
               <input class="callback__input" autocomplete="off" name="name" type="text" required>
@@ -57,7 +57,16 @@
             </label>
           </div>
           <div class="callback-form__bottom"> 
-            <input class="callback__attach" type="file" >
+            <div class="service-modal-footer__add-file">			
+              <label for="file">Прикрепить первичные документы по долгу</label>
+              <input  class="service-modal-footer__add-file__input" 
+                      type="file" 
+                      data-multiple-caption="{count}" 
+                      name="files[]"
+                      multiple="multiple" 
+                      id="file"
+                      required autocomplete="off">
+            </div>
             <button class="callback__submit" type="submit">Отправить</button>
           </div>
         </form>
@@ -142,6 +151,9 @@
                 class="modal__appImage">
               <img
                 src="https://cdn.pocket-lint.com/r/s/1200x/assets/images/149324-phones-review-review-iphone-11-pro-max-review-product-shots-image1-keant0hfcg.jpg"
+                class="modal__appImage">
+                <img
+                src="https://static.baza.farpost.ru/v/1522641680980_bulletin"
                 class="modal__appImage">
             </div>
             <div class="modal__sliderDots">
